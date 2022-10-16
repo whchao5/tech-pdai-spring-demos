@@ -33,4 +33,13 @@ public class SpringBootHelloWorldApplication {
         return new ResponseEntity<>("hello world", HttpStatus.OK);
     }
 
+    /**
+     * hello world.
+     *
+     * @return hello
+     */
+    @GetMapping("/boss")
+    public ResponseEntity<String> boss() {
+        return new ResponseEntity<>("boss world", HttpStatus.OK);
+    }
 }

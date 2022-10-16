@@ -29,6 +29,19 @@ public class UserController {
     /**
      * http://localhost:8080/user/add .
      *
+     * {
+     *   "userId": "333",
+     *   "email": "123333@126.com",
+     *   "cardNo": "431223200712065312",
+     *   "nickName": "oooooo",
+     *   "sex": 1,
+     *   "age": 12,
+     *   "address": {
+     *     "city": "ffff",
+     *     "zipcode": "abc"
+     *   }
+     * }
+     *
      * @param userParam user param
      * @return user
      */

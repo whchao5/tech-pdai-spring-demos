@@ -5,7 +5,7 @@ spring:
     url: jdbc:mysql://localhost:3306/test_db?useSSL=false&autoReconnect=true&characterEncoding=utf8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: bfXa4Pt2lUUScy8jakXf
+    password:
 
 mybatis-plus:
   configuration:
@@ -13,6 +13,7 @@ mybatis-plus:
     use-generated-keys: true
     default-executor-type: REUSE
     use-actual-param-name: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 knife4j:
   enable: true
@@ -26,3 +27,6 @@ knife4j:
     # models
     enableSwaggerModels: true
     swaggerModelName: My Models
+#logging:
+#  level:
+#    tech.pdai.springboot.mysql57.mybatisplus.xml.dao: debug

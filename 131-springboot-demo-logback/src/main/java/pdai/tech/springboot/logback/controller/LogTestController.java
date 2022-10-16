@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author pdai
@@ -24,6 +26,9 @@ public class LogTestController {
         log.info("info log @ {}", LocalDateTime.now());
         log.warn("warn log @ {}", LocalDateTime.now());
         log.error("error log @ {}", LocalDateTime.now());
-        return ResponseEntity.ok("success");
+        log.error("error2 log @ {}", LocalDateTime.now());
+        Map<String, String> hashMap = new HashMap<>();
+        hashMap.put("ooo", "oooo");
+        return ResponseEntity.ok(hashMap.toString());
     }
 }
